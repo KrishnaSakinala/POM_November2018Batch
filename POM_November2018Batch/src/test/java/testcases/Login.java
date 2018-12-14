@@ -6,6 +6,8 @@ public class Login {
 		
 		System.out.println("This is dummy test.");
 		
+		System.out.println("This is dummy test.");
+		
 
 	}
 }
