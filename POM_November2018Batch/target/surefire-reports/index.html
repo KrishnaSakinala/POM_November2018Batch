@@ -142,17 +142,17 @@
                   <a name="placeOrderByCOD">
                   </a> <!-- placeOrderByCOD -->
                   <span class="method-name">placeOrderByCOD</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//form[@name=&apos;checkout&apos;]/ul/li[1]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=70.0.3538.110)
   (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;Krishnas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:41f:3418:8792:12f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_161&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565386 (45a059dc425e08..., userDataDir: /var/folders/qv/31jvty150mq...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
-Session ID: 3d3af192219e9c16caef55dfc5d48da0
-*** Element info: {Using=xpath, value=//form[@name=&apos;checkout&apos;]/ul/li[1]}
+Session ID: 36594d2e001a0f1cb8697f103a864bf3
+*** Element info: {Using=id, value=s}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -162,14 +162,14 @@ Session ID: 3d3af192219e9c16caef55dfc5d48da0
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.getText(Unknown Source)
-	at pages.CheckoutPage.placeOrderByCODOption(CheckoutPage.java:69)
-	at testcases.PlaceOrderTest.placeOrderByCOD(PlaceOrderTest.java:29)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at pages.HomePage.searchBook(HomePage.java:29)
+	at testcases.PlaceOrderTest.placeOrderByCOD(PlaceOrderTest.java:25)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -187,9 +187,29 @@ Session ID: 3d3af192219e9c16caef55dfc5d48da0
                   <a name="placeOrderByNB">
                   </a> <!-- placeOrderByNB -->
                   <span class="method-name">placeOrderByNB</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping the test as the runmod is not Yes.
-	at testcases.PlaceOrderTest.placeOrderByNB(PlaceOrderTest.java:53)
-... Removed 29 stack frames
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.40.565386 (45a059dc425e08165f9a10324bd1380cc13ca363),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Krishnas-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:41f:3418:8792:12f1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565386 (45a059dc425e08..., userDataDir: /var/folders/qv/31jvty150mq...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 36594d2e001a0f1cb8697f103a864bf3
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at basetest.BaseTest.capture(BaseTest.java:104)
+	at basetest.BaseTest.getResult(BaseTest.java:119)
+... Removed 36 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -198,7 +218,7 @@ Session ID: 3d3af192219e9c16caef55dfc5d48da0
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/krishnasakinala/eclipse-workspace/POM_November2018Batch/testng.xml</span>
+            <span class="header-content">/Users/krishnasakinala/git/POM_November2018Batch/POM_November2018Batch/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -251,16 +271,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'placeOrderByCOD')
 data.setCell(0, 2, 'testcases.PlaceOrderTest')
-data.setCell(0, 3, 23321);
+data.setCell(0, 3, 101);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'placeOrderByNB')
 data.setCell(1, 2, 'testcases.PlaceOrderTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 101 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -295,24 +315,22 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">placeOrderByCOD</span>
-                <span class="method-start">10533 ms</span>
+                <span class="method-start">5123 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">getResult([TestResult name=placeOrderByCOD status=FAILURE method=PlaceOrderTest.placeOrderByCOD()[pri:0, insta...)</span>
-                <span class="method-start">33871 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">placeOrderByNB</span>
-                <span class="method-start">34372 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=placeOrderByNB status=SKIP method=PlaceOrderTest.placeOrderByNB()[pri:0, instance:t...)</span>
-                <span class="method-start">34374 ms</span>
+                <span class="method-start">5241 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34411 ms</span>
+                <span class="method-start">5335 ms</span>
               </div> <!-- configuration-suite after -->
+              <div class="test-method">
+                <span class="method-name">placeOrderByNB</span>
+                <span class="method-start">-1544751017068 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
